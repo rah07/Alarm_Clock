@@ -1,0 +1,136 @@
+body {
+    background: #4b6cb7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+}
+
+#time {
+    display: flex;
+    color: white;
+    font-size: 50px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#alarm_clock {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#alarm {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#set_alarm {
+    width: 100%;
+    background-color: #e08a43;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#hour {
+    padding: 12px
+}
+
+#min {
+    padding: 12px
+}
+
+#seconds {
+    padding: 12px
+}
+
+#period {
+    padding: 12px
+}
+
+.display {
+    display: flex;
+    padding: 10px;
+    padding-left: 32px;
+    padding-right: 35px;
+    margin-top: 30px;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#view-area {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+
+.del {
+    position: absolute;
+    left: 140%;
+    background-color: #e08a43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    border-radius: 40px;
+    margin-left: -50px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 45px;
+}
+
+i {
+    color: white;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+@media only screen and (max-width: 1150px) {
+    .display {
+        position: relative;
+        left: -15%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .display {
+        position: relative;
+        left: -30%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .display {
+        position: relative;
+        left: -40%;
+    }
+}
